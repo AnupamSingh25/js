@@ -1,7 +1,7 @@
 <html>
   <head></head>
   <body>
-    <select onchange="demo()">
+    <select id="dd1" onchange="demo()">
       <option>html</option>
       <option>css</option>
       <option>js</option>
@@ -13,7 +13,8 @@
     <p id="p1"></p>
     <script>
     function demo(){
-    var a = document.getElementById("p1").value
+    var a = document.getElementById("dd1").value
+    document.getElementById("p1")
     }
     </script>
   </body>
