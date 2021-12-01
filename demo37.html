@@ -14,8 +14,18 @@
   <body>
 	  <h1>image slider</h1>
 	  <img src="a1.png" id="img1"/>
-    
     <script>
+		var arr = ['img/a.jfif','img/b.jfif','img/c.jfif','img/d.jfif','img/e.jfif',]
+		var i=0
+		function slider(){
+			var im =document.getElementById("img1")
+			im.src=arr[i]
+			i++
+			if(i==arr.length){
+			i=0
+			}
+		}
+		window.setInterval(slider,1000)
 		
     </script>
   </body>
