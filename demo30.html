@@ -1,0 +1,80 @@
+<html>
+<head>
+<style>
+#outer{
+height:700px;
+width: 1500px;
+margin:0px auto;
+border:1px solid black;
+}
+.row{
+height:350px;
+width:1500px;
+}
+.col{
+height:300px;
+width:450px;
+background:aqua;
+float:left;
+margin:25px;
+}
+.col img{
+height:100%;
+width:100%;
+}
+#modal{
+width:100%;
+height:750px;
+background:rgba(0,0,0,.5);
+position:fixed;
+top:0px;
+display:none;
+}
+#inner{
+min-height:500px;
+width:700px;
+background:white;
+border-radius:5px;
+border:1px solid black;
+margin:100px auto;
+padding:25px;
+}
+#inner img{
+height:60%;
+width:100%;
+}
+</style>
+</head>
+<body>
+<center><h1>Image gallery</h1></center>
+<div id ="outer">
+<div class ="row">
+	<div class ="col">
+		<img src="a1.png" onclick="show(this)"/>
+	</div>
+	<div class ="col"><img src="b1.png" onclick="show(this)"/></div>
+	<div class ="col"><img src="img/e.jfif" onclick="show(this)" /></div>
+</div>
+<div class ="row">
+	<div class ="col"><img src="img/a.jfif" onclick="show(this)"/></div>
+	<div class ="col"><img src="img/d.jfif" onclick="show(this)"/></div>
+	<div class ="col"><img src="img/c.jfif" onclick="show(this)"/></div>
+</div>
+<div>
+<div id="modal">
+<div id="inner">
+<center><h2>image gallery</h2></center><!--<a href="demo30.html" style="text-decoration:none;color:red;font-size:30px;float:right;">X</a>--->
+<img src="img/e.jfif" id="modalimg"/>
+</div>
+</div>
+
+<script>
+function show(x){
+var a = document.getElementById("modal")
+a.style.display="block"
+var m = document.getElementById("modalimg")
+m.src=x.src
+}
+</script>
+</body>
+</html>

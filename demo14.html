@@ -1,0 +1,18 @@
+<html>
+<body>
+<input type="number" id="n1"><br><br>  
+<input type="number" id="n2"><br><br>
+<button onclick="sum()"> sum</button><br><br>
+<input type="number" id="n3"><br><br>
+
+<script>
+function sum(){
+var a = document.getElementById("n1").value
+var b = document.getElementById("n2").value
+v1=parseFloat(a)
+v2=parseFloat(b)
+document.getElementById("n3").value=(v1+v2).toFixed(3)
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+body{
+background:black;
+}
+#outer{
+height:300px;
+width:900px;
+margin:100px auto;
+}
+.col{
+height:250px;
+width:250px;
+background:white;
+border:25px solid red;
+float:left;
+text-align:center;
+line-height:250px;
+font-size:90px;
+font-family:impact;
+}
+button{
+height:50px;
+margin:50px;
+width:100px;
+font-family:impact;
+font-size:18px;
+background:white;
+color: green;
+}
+</style>
+</head>
+<body onload="setInterval(clock,1000)">
+<div id = "outer">
+<div id="hh" class="col">HH</div>
+<div id="mm" class="col">MM</div>
+<div id="ss" class="col">SS</div>
+</div>
+<script>
+function clock(){
+var time = new Date()
+hh=time.getHours()
+mm=time.getMinutes()
+ss=time.getSeconds()
+status="AM"
+if(hh>12){
+hh=hh-12
+status="PM"
+}
+if(hh<10){
+hh="0"+hh
+}
+if(mm<10){
+mm="0"+mm
+}
+if(ss<10){
+ss="0"+ss
+}
+document.getElementById("hh").innerText=hh
+document.getElementById("mm").innerText=mm
+document.getElementById("ss").innerText=ss+status
+}
+</script>
+</body>
+</html>

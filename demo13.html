@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+<input type="TEXT" id="t">
+<input type="TEXT" id="t2">
+
+<button onclick="set()">click me</button>
+
+<script>
+function set(){
+var a =document.getElementById("t").value
+var b =document.getElementById("t2").value
+var temp=a
+a=b
+b=temp
+document.getElementById("t").value=a
+document.getElementById("t2").value=b
+}
+</script>
+</body>
+</html>
