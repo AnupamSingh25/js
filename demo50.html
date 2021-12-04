@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var arr=["html","CSS","PHP","C#",".net","jquery"]
+alert(arr.includes("HTML".toLowerCase()))//true
+alert(arr.includes("HTML"))//false
+alert(arr.includes("js"))//false
+alert(arr.includes("PHP",1))//true
+alert(arr.includes("CSS",1))//true
+alert(arr.includes("CSS",2))//false
+//using join
+alert(arr.join(" * || * "))//false
+document.write(arr.join("||")+"<br><br>")
+alert(arr.join(" # # "))//false
+document.write(arr.join(" # # ")+"<br>")
+
+</script>
+</body>
+</html>
