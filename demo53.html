@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<p id="p1"></p>
+<script>
+var list=["summer training","vocational training","Apprentship training","winter training"]
+var res="<select id='ddl' onchange='demo()'>"
+list.forEach(function(x){
+res=res+"<option>"+x+"</option>"
+})
+ res+="</select>"
+ document.getElementById("p1").innerHTML=res
+ function demo(){
+ var a =document.getElementById("ddl").value
+ alert(a)
+ }
+</script>
+</body>
+</html>

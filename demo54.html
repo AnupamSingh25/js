@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+<p id="p1"></p>
+<br><br>
+<input type="txt" id="in">
+<script>
+var list=["summer training","vocational training","Apprentship training","winter training"]
+var res="<select id='ddl' onchange='demo(this)'>"
+list.forEach(function(x){
+res=res+"<option>"+x+"</option>"
+})
+ res+="</select>"
+ document.getElementById("p1").innerHTML=res
+ function demo(y){
+ //var a =document.getElementById("ddl").value
+ //alert(a)
+ var t =document.getElementById("in")
+if(y.value=="summer training") 
+t.value="6500"
+if(y.value=="vocational training") 
+t.value="5000"
+if(y.value=="Apprentship training") 
+t.value="15000"
+if(y.value=="winter training") 
+t.value="5500"
+ }
+</script>
+</body>
+</html>
