@@ -1,0 +1,22 @@
+
+
+
+
+<html>
+<head></head>
+<body>
+<p id="p1"></p>
+<script>
+var arr=["HTML","CSS","JAVASCRIPT","PHP","PYTHON"]
+var mycolor=["red","black","yellow","green","gray","purple"]
+var p=document.getElementById("p1")
+var res="<ol>"
+for(var i=0; i<arr.length; i++)
+{
+res=res+"<li style='background:"+mycolor[i]+";color:"+mycolor[i+1]+"'>"+arr[i]+"</li>"
+}
+res+="</ol>"
+p.innerHTML=res
+</script>
+</body>
+</html>
