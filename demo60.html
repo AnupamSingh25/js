@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+<center>
+<fieldset style="width:200px;">
+<legend>login form ....</legend>
+Username : <br><input type="txt" placeholder="enter userid" id="txt1"/><br>
+Password : <br><input type="password" placeholder="enter password" id="txt2"/><br><br>
+<button onclick="valid()">Login </button>
+
+</fieldset>
+</center>
+<script>
+function valid(){
+var u = document.getElementById("txt1").value.trim()
+
+var p = document.getElementById("txt2").value.trim()
+
+if(u=="anupam" && p=="Anupam@123"){
+//open("demo61.html","_blank","height=400px,width=400px")
+window.location="demo61.html"
+}
+
+}
+
+</script>
+</body>
+</html>

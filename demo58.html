@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<body>
+
+<input type="file" onchange="demo(this)" id="fu">
+<h1 id="z" style="font-size:60px;"></h1>
+<script>
+	function demo(x){
+	var a = x.value.lastIndexOf(".")
+	ex =x.value.substring(a+1).toUpperCase()
+	
+	if(ex=="PDF"){
+	alert("verified")
+	 c =document.getElementById("z")
+	c.innerText = ex
+	c.innerText="verified"
+	c.style.color="green"
+	}
+	else{
+	c =document.getElementById("z")
+	document.getElementById("z").innerText="not-verified"
+	c.style.color="red"
+	}
+	}
+</script>
+</body>
+</html>

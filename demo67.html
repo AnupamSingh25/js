@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+<h1>enter pin for check </h1>
+<input type="number" onkeypress="demo()" id="txt"/>
+<b id="msg"></b>
+<br/>
+<script>
+function demo(){
+var p= document.getElementById("msg")
+var x =document.getElementById("txt")
+var i=x.value
+//alert(a)
+	
+	if(i.length==5){
+		p.style.color="green"
+		p.innerText="valid pin code"
+		x.style.border="2px solid green"
+		}
+	
+
+else{
+p.style.color="red"
+		p.innerText="invalid pin code"
+		x.style.border="2px solid red"
+		
+}
+}
+</script>
+</body>
+</html>

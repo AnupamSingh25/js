@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+<input type="number" onkeyup="demo()" id="txt"/>
+<b id="msg"></b>
+<br/>
+<br/>
+<button onclick="demo()">verify</button>
+<script>
+function demo(){
+var p= document.getElementById("msg")
+var x =document.getElementById("txt")
+var i=x.value
+var a = i.charAt(0)
+//alert(a)
+	
+	if((a=='9'||a=='8'||a=='7'||a=='6') &&i.length==10){
+		p.style.color="green"
+		p.innerText="valid mobile number"
+		x.style.border="2px solid green"
+		}
+	
+
+else{
+p.style.color="red"
+		p.innerText="invalid mobile number"
+		x.style.border="2px solid red"
+		
+}
+}
+</script>
+</body>
+</html>
