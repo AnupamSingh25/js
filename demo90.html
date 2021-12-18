@@ -1,0 +1,17 @@
+<html>
+<head></head>
+<body>
+ <input type="text" id="txt1" onblur="demo()"/>
+ 
+ <p id="msg"></p>
+<script>
+	function demo(){
+	//var obj = document.getElementById("txt").value
+	var obj1 = document.getElementById("txt1").value
+	var cname=Math.log(obj1)
+	document.getElementById("msg").innerText=cname
+	}
+	
+</script>
+</body>
+</html>

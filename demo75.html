@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+<select>
+<option> --select training-- </option>
+<option> summer training </option>
+<option> winter training </option>
+<option> Apprentecship </option>
+</select>
+<button onclick="demo()">click</button>
+
+
+<script>
+function demo(){
+	var arr = ["red","green","yellow","Aqua"]
+	var a = document.querySelectorAll("option")
+	a.forEach(function(x,i){
+	x.style.background=arr[i]
+	})
+	} 
+</script>
+</body>
+</html>

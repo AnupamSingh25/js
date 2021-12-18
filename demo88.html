@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+ <input type="text" id="txt" onblur="demo()"/>
+ <button onclick="demo1()">cube root </button>
+ <p id="msg"></p>
+<script>
+	function demo(){
+	var obj = document.getElementById("txt").value
+	var cname=Math.sqrt(obj)
+	document.getElementById("msg").innerText=cname
+	}
+	function demo1(){
+	var obj = document.getElementById("txt").value
+	var cname=Math.cbrt(obj)
+	document.getElementById("msg").innerText=cname
+	}
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+div
+{
+height:400px;
+width:400px;
+text-align:center;
+background:navy;
+color:white;
+font-size:25px;
+border:10px groove skyblue;
+float:left;
+margin-left:50px;
+line-height:400px;
+}
+.a
+{
+transform:rotate(-45deg);
+background:pink;
+
+}.b
+{
+transform:rotate(-45deg);
+background:lightgreen;
+
+}
+</style>
+</head>
+<body>
+<div id="box1">Techpile</div>
+<div id="box2">Technology</div>
+<button onclick="demo()">Set style</button>
+<button onclick="demo1()">remove style</button>
+<button onclick="demo2()">toggle style</button>
+<button onclick="demo3()">conatin style</button>
+<script>
+function demo()
+{
+document.querySelector("#box1").classList.add('a')
+document.querySelector("#box2").classList.add('b')
+}
+function demo1()
+{
+document.querySelector("#box1").classList.remove('a')
+document.querySelector("#box2").classList.remove('b')
+}
+function demo2()
+{
+document.querySelector("#box1").classList.toggle('a')
+document.querySelector("#box2").classList.toggle('b')
+}
+function demo3()
+{
+alert(document.querySelector("#box1").classList.contains('a'))
+alert(document.querySelector("#box2").classList.contains('b'))
+
+
+
+
+}
+</script>
+</body>
+</html	>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+.a
+{
+height:100px;
+width:600px;
+background:navy;
+color:white;
+font-size:25px;
+border:10px groove skyblue;
+
+}
+</style>
+</head>
+<body>
+<div id="box">Welcome to the world of js</div>
+<button onclick="demo()">Set style</button>
+<button onclick="demo1()">remove style</button>
+<button onclick="demo2()">toggle style</button>
+<button onclick="demo3()">conatin style</button>
+<script>
+function demo()
+{
+document.querySelector("#box").classList.add('a')
+}
+function demo1()
+{
+document.querySelector("#box").classList.remove('a')
+}
+function demo2()
+{
+document.querySelector("#box").classList.toggle('a')
+}
+function demo3()
+{
+alert(document.querySelector("#box").classList.contains('a'))
+
+
+
+
+}
+</script>
+</body>
+</html>

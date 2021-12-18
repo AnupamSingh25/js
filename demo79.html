@@ -1,0 +1,19 @@
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<img src="img/a.jfif" class="cls" id="im" height="400px" width="600px" onmouseover="demo()" onmouseleave="demo1()"/>
+<button onclick="demo()">click</button>
+<script>
+function demo(){
+document.querySelector("img").setAttribute("src","img/b.jfif")
+}
+function demo1(){
+document.querySelector("img").setAttribute("src","img/a.jfif")
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+#box{
+height:auto;
+width:400px;
+border:5px solid red;
+padding:30px;
+margin:100px auto;
+}
+input{
+width:100%;
+height:40px;
+}
+</style>
+</head>
+<body onload="demo()">
+<div id="box">
+<p id="msg"></p>
+username:<br/><input type="text" id="un"/>
+Password:<br/><input type="password" id="pass"/>
+Enter Captcha code : <input type="text" id="txt"/></br></br>
+<s id="s"></s><button onclick="demo()">refresh Captcha</button></br><br>
+<button onclick="demo1()">Login</button>
+</div>
+<script>
+function demo(){
+var str="1234567890/*-+asdfghjklmnbvcxzqwertyuiop"
+var c = ""
+for(var i=0;i<6;i++)
+{
+var ran=Math.floor(Math.random()*str.length)
+c+=str[ran]
+}
+
+document.getElementById("s").innerHTML=c
+}
+function demo1(){
+var a=document.getElementById("s").innerText
+var un =document.getElementById("txt").value
+var msg =document.getElementById("msg")
+var uname="Anupam@123"
+var passwd="Anupam@123"
+var u=document.getElementById("un").value
+var p=document.getElementById("pass").value
+if(a==un){
+ if(uname==u && p==passwd){
+ alert("welcome to the dashboard !!!")
+ window.location="demo83.html"
+ }
+ else{
+ msg.innerHTML="invalid username or password!!!!!"
+ msg.style.color="red";
+ }
+}
+else{
+msg.innerHTML="invalid captcha !!!"
+msg.style.color="red";
+}
+
+}
+</script>
+</body>
+</html>

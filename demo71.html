@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<body onload="demo()">
+<ul>
+<li>html</li>
+<li>css</li>
+<li>js</li>
+<li>jquery</li>
+<li>bootstrap</li>
+</ul>
+<b id="msg"></b>
+<script>
+function demo(){
+var a=document.getElementsByTagName("li")
+//alert(a[0].innerText)
+ var res="<select><option>--select--"
+ var i
+ for(i=0;i<a.lenght;i++){
+	res=res+"<option>"+a[i].innerText+"</option>"
+ }
+ res+="</select>"
+ alert(res)
+ document.getElementById("msg").innerHTML=res
+}
+</script>
+</body>
+</html>

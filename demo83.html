@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+#outer{
+height:300px;
+width:300px;
+margin:0px auto;
+border:5px solid red;
+padding:50px;
+box-sizing:border-box;
+}
+#outer div{
+height:150px;
+width:150px;
+text-align:center;
+line-height:150px;
+font-size:30px;
+border:3px solid yellow;
+color:white;
+}
+
+</style>
+</head>
+<body onload="demo()">
+<div id="outer">
+<div id="box"></div><br>
+<input type="text" id="c"></br></br>
+<button onclick="set()">set background</button>
+</div>
+<script>
+
+function demo(){
+var str="0123456789abcdef"
+var bcolor="#"
+for(var j=0;j<6;j++){
+var ind = Math.floor(Math.random()*16)
+bcolor+=str.charAt(ind)
+
+}
+document.getElementById("box").style.background=bcolor;
+document.getElementById("c").value=bcolor;
+}
+window.setInterval(demo,2000)
+function set(){
+var color=document.getElementById("c").value
+document.getElementById("outer").style.background=color;
+
+}
+</script>
+</body>
+</html>
